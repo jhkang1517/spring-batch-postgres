@@ -18,6 +18,7 @@ public class CustomerProcessor implements ItemProcessor<Customer, Customer> {
         final Customer transformedPerson = Customer.builder()
                 .firstName(firstName)
                 .lastName(lastName)
+                .balance(customer.getBalance())
                 .build();
 
         log.info("Converting (" + customer + ") into (" + transformedPerson + ")");

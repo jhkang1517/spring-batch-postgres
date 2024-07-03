@@ -16,7 +16,7 @@ public class DatabaseInitializer {
 
     @PostConstruct
     public void init() {
-        initializeCustomers();
+//        initializeCustomers();
     }
 
     private void initializeCustomers() {
