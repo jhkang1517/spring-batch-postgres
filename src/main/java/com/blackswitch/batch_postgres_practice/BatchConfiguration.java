@@ -53,7 +53,7 @@ public class BatchConfiguration {
 //    }
 
     @Bean
-    public JdbcBatchItemWriter<Customer> customerWriterV2() {
+        public JdbcBatchItemWriter<Customer> customerWriterV2() {
         return new JdbcBatchItemWriterBuilder<Customer>()
                 .dataSource(dataSource)
                 .sql("INSERT INTO CUSTOMER (first_name, last_name, balance) VALUES (:firstName, :lastName, :balance)")
